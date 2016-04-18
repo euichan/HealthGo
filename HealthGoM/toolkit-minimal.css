@@ -8914,6 +8914,7 @@ h6 .em,
 h6,
 .el {
   margin-bottom: 5px;
-  color: #bbbbbb;
+  color: #ffffff;
+  font-weight: bold;
   text-transform: uppercase;
 }
