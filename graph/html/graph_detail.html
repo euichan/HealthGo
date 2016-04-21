@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://bootstrap-themes.github.io/dashboard/fluid/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel = " shortcut icon " href="../login/img/icon.png">
+<link rel = "icon" href = "../login/img/icon.png">
+
+    <title>
+      
+        Fluid · Dashboard theme · Official Bootstrap Themes
+      
+    </title>
+
+    <link href="../css/css" rel="stylesheet">
+    
+      <link href="../css/toolkit-inverse.css" rel="stylesheet">
+    
+    
+    <link href="../css/application.css" rel="stylesheet">
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+    </style>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+body { margin-top: 100px; color: #fff; text-align:center; }
+
+h1 {
+  font: 2em 'Roboto', sans-serif;
+  margin-bottom: 40px;
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+   </style>
+    <script>
+        setTimeout(function () {
+            document.getElementsByClassName("loading-container")[0].style.display = "none";
+            document.getElementsByClassName("loading-container")[1].style.display = "none";
+            document.getElementsByClassName("ft")[1].style.visibility = "visible";
+        }
+        ,5000);
+    </script>
+
+    
+<body class="ts">
+  <nav class="ci ou g">
+    <div class="ft ui" >
+      <div class="oj">
+        <button type="button" class="om collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="ct">Toggle navigation</span>
+          <span class="on"></span>
+          <span class="on"></span>
+          <span class="on"></span>
+        </button>
+        <a class="ol tu" href="dashboard.html">
+          <span class="bv act tt"></span>
+          HealthGo
+        </a>
+      </div>
+      <div id="navbar" class="ok collapse">
+        <ul class="nav navbar-nav">
+        <li>
+            <a href="../../index/html/marketing.html">HealthGo 소개</a>
+          </li>
+          <li>
+            <a href="../../HealthGoM/html/M.htm">HealthGoM</a>
+          </li>
+          <!--<li class="active">
+            <a href="http://bootstrap-themes.github.io/dashboard/fluid/index.html">Fluid layout</a>
+          </li>-->
+          <li>
+            <a href="graph_detail.html">질병그래프</a>
+          </li>
+          <li>
+            <a href="graph2.html">
+              체중관리
+            </a>
+          </li>
+            <li>
+                <a href="upload.html">건강기록서</a>
+              </li>
+          <!--<li>
+            <a href="http://bootstrap-themes.github.io/dashboard/light/index.html">Light UI</a>
+          </li>-->
+        </ul>
+        <form class="fa oo ny">
+          <div class="aol">
+            <input class="form-control" type="text" placeholder="Search...">
+            <span class="bv adn"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <h1  class="loading-container">건강검진 기록서 및 코호트DB를 분석중입니다.</h1>
+    <div class="loading-container" id="loading"></div>
+    
+  <div class="ft ui" style="visibility:hidden">
+     
+    <div class="apa alg">
+  <div class="apb">
+    <h6 class="apd">HEALTHGO</h6>
+    <h2 class="apc">질병그래프</h2>
+  </div>
+
+  <div class="ob ape">
+    <div class="tn aol">
+      <input type="text" value="01/01/15 - 01/08/15" class="form-control" data-provide="datepicker">
+      <span class="bv wt"></span>
+    </div>
+  </div>
+</div>
+
+<div class="anv aky ali">
+  <h3 class="anw anx">유행 질병</h3>
+</div>
+<div class="fu apt">
+  <div class="gq gf ala">
+    <div class="apu">
+      <div class="alz">
+        <span class="anj">에이즈</span>
+        <h2 class="ani">
+          12,938
+          <small class="bz pd">5%</small>
+        </h2>
+      </div>
+      <canvas id="sparkline1" width="433" height="107" class="apv" data-chart="spark-line" data-value="[{strokeColor: &#39;#1ca8dd&#39;, fillColor:&#39;rgba(28,168,221,.03)&#39;, data:[28,68,41,43,96,45,100]}]" data-labels="[&#39;a&#39;, &#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;,&#39;g&#39;]" style="width: 433px; height: 107px;"></canvas>
+    </div>
+  </div>
+  <div class="gq gf ala">
+    <div class="apu">
+      <div class="alz">
+        <span class="anj">암</span>
+        <h2 class="ani">
+          758
+          <small class="bz pg">1.3%</small>
+        </h2>
+      </div>
+      <canvas id="sparkline1" width="433" height="107" class="apv" data-chart="spark-line" data-value="[{strokeColor: &#39;#1ca8dd&#39;, fillColor:&#39;rgba(28,168,221,.03)&#39;, data:[4,34,64,27,96,50,80]}]" data-labels="[&#39;a&#39;, &#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;,&#39;g&#39;]" style="width: 433px; height: 107px;"></canvas>
+    </div>
+  </div>
+  <div class="gq gf ala">
+    <div class="apu">
+      <div class="alz">
+        <span class="anj">결핵</span>
+        <h2 class="ani">
+          1,293
+          <small class="bz pd">6.75%</small>
+        </h2>
+      </div>
+      <canvas id="sparkline1" width="433" height="107" class="apv" data-chart="spark-line" data-value="[{strokeColor: &#39;#1ca8dd&#39;, fillColor:&#39;rgba(28,168,221,.03)&#39;, data:[12,38,32,60,36,54,68]}]" data-labels="[&#39;a&#39;, &#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;,&#39;g&#39;]" style="width: 433px; height: 107px;"></canvas>
+    </div>
+  </div>
+  <div class="gq gf ala">
+    <div class="apu">
+      <div class="alz">
+        <span class="anj">백혈병</span>
+        <h2 class="ani">
+          758
+          <small class="bz pd">1.3%</small>
+        </h2>
+      </div>
+      <canvas id="sparkline1" width="433" height="107" class="apv" data-chart="spark-line" data-value="[{strokeColor: &#39;#1ca8dd&#39;, fillColor:&#39;rgba(28,168,221,.03)&#39;, data:[43,48,52,58,50,95,100]}]" data-labels="[&#39;a&#39;, &#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;,&#39;f&#39;,&#39;g&#39;]" style="width: 433px; height: 107px;"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="anv all">
+  <ul class="nav of anw any" role="tablist">
+    <li class="active" role="presentation">
+      <a href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#sales" role="tab" data-toggle="tab" aria-controls="sales">월별</a>
+    </li>
+    <li role="presentation">
+      <a href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#inventory" role="tab" data-toggle="tab" aria-controls="inventory">주별</a>
+    </li>
+    <li role="presentation">
+      <a href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#profit" role="tab" data-toggle="tab" aria-controls="profit">일별</a>
+    </li>
+  </ul>
+</div>
+
+<div class="oh">
+  <div role="tabpanel" class="oi active" id="sales">
+    <div class="aqo">
+       <canvas class="anu" width="1823" height="273" data-chart="line" data-scale-line-color="transparent" data-scale-grid-line-color="rgba(255,255,255,.05)" data-scale-font-color="#a2a2a2" data-labels="[&#39;&#39;,&#39;1월&#39;,&#39;&#39;,&#39;&#39;,&#39;4월&#39;,&#39;&#39;,&#39;&#39;,&#39;7월&#39;,&#39;&#39;,&#39;&#39;,&#39;10월&#39;,&#39;&#39;]" data-value="[{fillColor: &#39;rgba(28,168,221,.03)&#39;, data: [2500, 3300, 2512, 2775, 2498, 3512, 2925, 4275, 3507, 3825, 3445, 3985]}]" style="width: 1823px; height: 273px;">
+      </canvas>
+    </div>
+  </div>
+
+  <div role="tabpanel" class="oi" id="inventory">
+    <div class="aqo">
+      <canvas class="anu" width="600" height="400" data-chart="bar" data-scale-line-color="transparent" data-scale-grid-line-color="rgba(255,255,255,.05)" data-scale-font-color="#a2a2a2" data-labels="[&#39;월&#39;,&#39;화&#39;,&#39;수&#39;,&#39;목&#39;,&#39;금&#39;,&#39;토&#39;,&#39;일&#39;]" data-value="[{ label: &#39;First dataset&#39;, data: [65, 59, 80, 81, 56, 55, 40] }, { label: &#39;Second dataset&#39;, data: [28, 48, 40, 19, 86, 27, 90] }]">
+      </canvas>
+    </div>
+  </div>
+
+  <div role="tabpanel" class="oi" id="profit">
+    <div class="fu aqp db">
+      <div class="gi">
+        <div class="aqq ale">
+          <canvas class="ant" width="200" height="200" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 230, color: &#39;#1ca8dd&#39;, label: &#39;Returning&#39; }, { value: 130, color: &#39;#1bc98e&#39;, label: &#39;New&#39; }]">
+          </canvas>
+        </div>
+        <!--<strong class="dh">Traffic</strong>-->
+        <h3>눈병</h3>
+      </div>
+      <div class="gi">
+        <div class="aqq ale">
+          <canvas class="ant" width="200" height="200" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 330, color: &#39;#1ca8dd&#39;, label: &#39;Recurring&#39; }, { value: 30, color: &#39;#1bc98e&#39;, label: &#39;New&#39; }]">
+          </canvas>
+        </div>
+        <!--<strong class="dh">Revenue</strong>-->
+        <h3>감기</h3>
+      </div>
+      <div class="gi">
+        <div class="aqq ale">
+          <canvas class="ant" width="200" height="200" data-chart="doughnut" data-segment-stroke-color="#222" data-value="[{ value: 100, color: &#39;#42a5f5&#39;, label: &#39;Referrals&#39; }, { value: 260, color: &#39;#1bc98e&#39;, label: &#39;Direct&#39; }]">
+          </canvas>
+        </div>
+        <!--<strong class="dh">Traffic</strong>-->
+        <h3>몸살</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="anv aln ali">
+  <h3 class="anw anx">지역별 현황</h3>
+</div>
+
+<div class="fu">
+  <div class="gj ala">
+    <div class="by">
+      <h4 class="ty">
+        국제 현황
+      </h4>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">62.4%</span>
+          9번 세염색체 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz"></span>
+          <span class="dy dh">15.0%</span>
+          9번 장완 염색체 미세결실 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">5.0%</span>
+          AIDS 이형 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">5.0%</span>
+          ARC 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">4.5%</span>
+          신 세뇨관 이상
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">2.3%</span>
+          담즙정체 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">1.7%</span>
+          관절굽음증
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">1.5%</span>
+          COFS 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">1.4%</span>
+          Degos 병
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="tz" ></span>
+          <span class="dy dh">1.2%</span>
+          De Sanctis Cacchione 증후군
+        </a>
+      
+    </div>
+    <a href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#" class="ce apn">전체보기</a>
+  </div>
+  <div class="gj ala">
+    <div class="by">
+      <h4 class="ty">
+        대한민국 현황
+      </h4>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">3,929,481</span>
+          GABA 수용체 돌연변이
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">1,143,393</span>
+          GABA 아미노전이효소 결핍증
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">938,287</span>
+          II형 백혈구 접합 물질 결핍증
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">749,393</span>
+          IgA 신장병증
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">695,912</span>
+          Juberg-Marsidi 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">501,938</span>
+          L1 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">392,842</span>
+          Ochoa 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">298,183</span>
+          PAPA 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">193,129</span>
+          Laband 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">93,382</span>
+          PEHO 증후군
+        </a>
+      
+    </div>
+    <a href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#" class="ce apn">전체보기</a>
+  </div>
+  <div class="gj ala">
+    <div class="by">
+      <h4 class="ty">
+        동일지역 현황
+      </h4>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">29,481</span>
+          PTEN 과오종 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">19,393</span>
+          Rh 부적합증
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">18,287</span>
+          Saethre-Chotzen 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">16,393</span>
+          VII형 점액다당류증
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">13,912</span>
+          WAGR 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">11,938</span>
+          X-연관 림프증식성 질환
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">9,842</span>
+          I형 점액다당류증
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">5,183</span>
+          X관련성 선천성 부신 저형성증
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">3,129</span>
+          가드너 증후군
+        </a>
+      
+        <a class="ph" href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#">
+          <span class="dy dh">382</span>
+          가부키 증후군
+        </a>
+      
+    </div>
+    <a href="http://bootstrap-themes.github.io/dashboard/fluid/index.html#" class="ce apn">전체보기</a>
+  </div>
+</div>
+
+  </div>
+
+    <script src="../js/jquery.min(1).js"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/tablesorter.min.js"></script>
+    <script src="../js/toolkit.js"></script>
+    <script src="../js/application.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+  
+
+
+</body></html>
